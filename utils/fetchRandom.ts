@@ -1,6 +1,6 @@
 const cloudinary = require('./cloudinary');
 
-interface DraggablePhoto {
+export interface DraggablePhoto {
   id: number;
   src: string;
   alt: string;
