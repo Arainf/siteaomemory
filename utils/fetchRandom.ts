@@ -1,4 +1,4 @@
-const cloudinary = require('./cloudinary');
+import cloudinary from './cloudinary';
 
 export interface DraggablePhoto {
   id: number;
@@ -13,7 +13,7 @@ export interface DraggablePhoto {
  * @param {number} count - Number of random photos
  * @returns {Promise<DraggablePhoto[]>}
  */
-async function getRandomPhotos(folder: string, count: number): Promise<DraggablePhoto[]> {
+export async function getRandomPhotos(folder: string, count: number): Promise<DraggablePhoto[]> {
   const result = await cloudinary.search
     .expression(`folder:${folder}/*`)
     .sort_by('public_id', 'desc')
@@ -32,5 +32,3 @@ async function getRandomPhotos(folder: string, count: number): Promise<Draggable
 
   return draggablePhotos;
 }
-
-module.exports = { getRandomPhotos }; 

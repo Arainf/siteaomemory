@@ -1,13 +1,11 @@
 import type { NextPage, GetServerSideProps } from "next";
 import Head from "next/head";
-import { PhotoCarousel } from "../components/photo-carousel";
 import { DraggablePhoto } from "../components/draggable-photo";
-import { MemorablePhoto } from "../components/memorable-photo";
-import { PhotoGrid } from "../components/PhotoGrid";
 import React, { useState, useEffect } from "react";
 import MemoryLane from "@/components/memory-lane";
+import { getRandomPhotos } from "@/utils/fetchRandom";
 
-const { getRandomPhotos } = require("../utils/fetchRandom");
+
 
 interface HomeProps {
   draggablePhotos: any[];
