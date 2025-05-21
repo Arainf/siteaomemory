@@ -4,16 +4,38 @@ import { PhotoCarousel } from "../components/photo-carousel";
 import { DraggablePhoto } from "../components/draggable-photo";
 import { MemorablePhoto } from "../components/memorable-photo";
 import { PhotoGrid } from "../components/PhotoGrid";
-import { getRandomPhotos } from "../utils/fetchRandom";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MemoryLane from "@/components/memory-lane";
+
+// Use require for fetchRandom
+const { getRandomPhotos } = require("../utils/fetchRandom");
 
 interface HomeProps {
   draggablePhotos: any[];
 }
 
+interface Dimensions {
+  centerX: number;
+  centerY: number;
+}
 
 const Home: NextPage<HomeProps> = ({ draggablePhotos }) => {
+  const [dimensions, setDimensions] = useState<Dimensions>({ centerX: 500, centerY: 400 });
+
+  useEffect(() => {
+    const updateDimensions = () => {
+      setDimensions({
+        centerX: window.innerWidth / 2,
+        centerY: window.innerHeight / 2
+      });
+    };
+
+    updateDimensions();
+    window.addEventListener('resize', updateDimensions);
+
+    return () => window.removeEventListener('resize', updateDimensions);
+  }, []);
+
   return (
     <>
       <Head>
@@ -34,10 +56,8 @@ const Home: NextPage<HomeProps> = ({ draggablePhotos }) => {
           {draggablePhotos.map((photo, index) => {
             const angle = (index * 137.5) % 360;
             const radius = 200 + (index * 80);
-            const centerX = (typeof window !== "undefined" ? window.innerWidth : 1000) / 2;
-            const centerY = (typeof window !== "undefined" ? window.innerHeight : 800) / 2;
-            const x = Math.round(centerX + Math.cos(angle * Math.PI / 180) * radius);
-            const y = Math.round(centerY + Math.sin(angle * Math.PI / 170) * radius);
+            const x = Math.round(dimensions.centerX + Math.cos(angle * Math.PI / 180) * radius);
+            const y = Math.round(dimensions.centerY + Math.sin(angle * Math.PI / 170) * radius);
             return (
               <DraggablePhoto
                 key={photo.id}

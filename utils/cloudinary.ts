@@ -1,4 +1,4 @@
-import cloudinary from "cloudinary";
+const cloudinary = require('cloudinary');
 
 cloudinary.v2.config({
   cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
@@ -7,4 +7,4 @@ cloudinary.v2.config({
   secure: true,
 });
 
-export default cloudinary;
+module.exports = cloudinary;
