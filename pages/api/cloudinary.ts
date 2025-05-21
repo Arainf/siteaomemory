@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import cloudinary from '@/utils/cloudinary'
+const cloudinary = require('../../utils/cloudinary')
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { folder } = req.query
@@ -8,7 +8,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
-    const result = await cloudinary.v2.search
+    const result = await cloudinary.search
       .expression(`folder:${folder}/*`)
       .sort_by('public_id', 'desc')
       .max_results(400)
