@@ -22,12 +22,12 @@
   background-color: #ff6b00;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .grid-background {
     background-size: 50px 50px;
     transform: perspective(500px) rotateX(30deg);
   }
-}
+} */
 
 @font-face {
   font-family: 'Century Gothic';
