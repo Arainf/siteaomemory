@@ -6,9 +6,7 @@ import { MemorablePhoto } from "../components/memorable-photo";
 import { PhotoGrid } from "../components/PhotoGrid";
 import React, { useState, useEffect } from "react";
 import MemoryLane from "@/components/memory-lane";
-
-// Use require for fetchRandom
-const { getRandomPhotos } = require("../utils/fetchRandom");
+import { getRandomPhotos } from "@/utils/fetchRandom";
 
 interface HomeProps {
   draggablePhotos: any[];
