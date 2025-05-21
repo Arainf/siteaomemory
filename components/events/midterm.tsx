@@ -30,7 +30,7 @@ const MemoizedImage = memo(({ src, alt, className, addRef }: MemoizedImageProps)
 
 MemoizedImage.displayName = "MemoizedImage"
 
-function Midterm() {
+export default function Midterm() {
   const sectionRef = useRef(null)
   const titleRef = useRef()
   const imageRefs = useRef([])
@@ -313,4 +313,3 @@ function Midterm() {
   )
 }
 
-export default Midterm;

@@ -30,7 +30,7 @@ const MemoizedImage = memo(({ src, alt, className, addRef }: MemoizedImageProps)
 
 MemoizedImage.displayName = "MemoizedImage"
 
-function Orsem() {
+export default function Orsem() {
   const sectionRef = useRef(null)
   const titleRef = useRef()
   const imageRefs = useRef([])
@@ -448,5 +448,3 @@ function Orsem() {
     </>
   )
 }
-
-export default Orsem

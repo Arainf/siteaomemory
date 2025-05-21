@@ -29,7 +29,7 @@ const MemoizedImage = memo(({ src, alt, className, addRef }: MemoizedImageProps)
 
 MemoizedImage.displayName = "MemoizedImage"
 
-function Atfest() {
+export default function Atfest() {
   const sectionRef = useRef(null)
   const titleRef = useRef()
   const imageRefs = useRef([])
@@ -383,4 +383,3 @@ function Atfest() {
   )
 }
 
-export default Atfest;

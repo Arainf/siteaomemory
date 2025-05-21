@@ -29,7 +29,7 @@ const MemoizedImage = memo(({ src, alt, className, addRef }: MemoizedImageProps)
 });
 MemoizedImage.displayName = "MemoizedImage"
 
-function Sweetao() {
+export default function Sweetao() {
   const sectionRef = useRef(null)
   const titleRef = useRef()
   const imageRefs = useRef([])
@@ -319,4 +319,3 @@ function Sweetao() {
   )
 }
 
-export default Sweetao;

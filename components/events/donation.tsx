@@ -30,7 +30,7 @@ const MemoizedImage = memo(({ src, alt, className, addRef }: MemoizedImageProps)
 
 MemoizedImage.displayName = "MemoizedImage"
 
-function Donation() {
+export default function Donation() {
   const sectionRef = useRef(null)
   const titleRef = useRef()
   const imageRefs = useRef([])
@@ -309,4 +309,3 @@ function Donation() {
   )
 }
 
-export default Donation;

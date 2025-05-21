@@ -30,7 +30,7 @@ const MemoizedImage = memo(({ src, alt, className, addRef }: MemoizedImageProps)
 
 MemoizedImage.displayName = "MemoizedImage"
 
-function Olympics() {
+export default function Olympics() {
   const sectionRef = useRef(null)
   const titleRef = useRef()
   const imageRefs = useRef([])
@@ -332,4 +332,3 @@ function Olympics() {
   )
 }
 
-export default Olympics;

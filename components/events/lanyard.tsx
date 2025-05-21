@@ -30,7 +30,7 @@ const MemoizedImage = memo(({ src, alt, className, addRef }: MemoizedImageProps)
 
 MemoizedImage.displayName = "MemoizedImage"
 
-function Lanyard() {
+export default function Lanyard() {
   const sectionRef = useRef(null)
   const titleRef = useRef()
   const imageRefs = useRef([])
@@ -323,5 +323,3 @@ function Lanyard() {
     </>
   )
 }
-
-export default Lanyard;

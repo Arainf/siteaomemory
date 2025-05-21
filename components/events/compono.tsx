@@ -29,7 +29,7 @@ const MemoizedImage = memo(({ src, alt, className, addRef }: MemoizedImageProps)
 
 MemoizedImage.displayName = "MemoizedImage"
 
-function Compono() {
+export default function Compono() {
   const [isOverlayVisible, setIsOverlayVisible] = useState(false)
   const sectionRef = useRef(null)
   const titleRef = useRef()
@@ -355,4 +355,3 @@ function Compono() {
   )
 }
 
-export default Compono

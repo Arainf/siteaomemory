@@ -7,7 +7,6 @@ import Siteaoplus from "./events/siteaoplus"
 import Orsem from "./events/orsem"
 import Genass from "./events/genass"
 import LazyRender from "@/utils/lazywrapper"
-import DynamicGallery from "./events/dynamicGallery"
 import Induction from "./events/induction"
 import Lanyard from "./events/lanyard"
 import Sweeteao from "./events/sweeteao"
@@ -108,7 +107,7 @@ const baseEvents = [
   }
 ]
 
-export function MemoryLane() {
+export default function MemoryLane() {
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc")
 
   const sortedEvents = [...baseEvents].sort((a, b) => {

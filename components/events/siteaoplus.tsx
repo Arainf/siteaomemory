@@ -30,7 +30,7 @@ const MemoizedImage = memo(({ src, alt, className, addRef }: MemoizedImageProps)
 
 MemoizedImage.displayName = "MemoizedImage"
 
-function Siteaoplus() {
+export default function Siteaoplus() {
   const [isOverlayVisible, setIsOverlayVisible] = useState(false)
   const sectionRef = useRef(null)
   const titleRef = useRef()
@@ -357,4 +357,3 @@ function Siteaoplus() {
   )
 }
 
-export default Siteaoplus

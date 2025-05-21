@@ -6,7 +6,7 @@ import { MemorablePhoto } from "../components/memorable-photo";
 import { PhotoGrid } from "../components/PhotoGrid";
 import { getRandomPhotos } from "../utils/fetchRandom";
 import React from "react";
-import { MemoryLane } from "@/components/memory-lane";
+import MemoryLane from "@/components/memory-lane";
 
 interface HomeProps {
   draggablePhotos: any[];

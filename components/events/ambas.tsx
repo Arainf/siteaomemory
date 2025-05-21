@@ -29,7 +29,7 @@ const MemoizedImage = memo(({ src, alt, className, addRef }: MemoizedImageProps)
 });
 MemoizedImage.displayName = "MemoizedImage"
 
-function Ambas() {
+export default function Ambas() {
   const sectionRef = useRef(null)
   const titleRef = useRef()
   const imageRefs = useRef([])
@@ -355,5 +355,3 @@ function Ambas() {
     </>
   )
 }
-
-export default Ambas;
