@@ -12,9 +12,9 @@ const EVENT_HEIGHTS = {
   'justice': 200,
   'midterm': 200,
   'olympics': 240,
-  'atfest': 350,
-  'iggy': 120,
-  'end': 120
+  'atfest': 3500,
+  'iggy': 1200,
+  'end': 1000
 };
 
 export const calculateTotalHeight = () => {
@@ -25,7 +25,7 @@ export const calculateTotalHeight = () => {
   const totalHeight = Object.values(EVENT_HEIGHTS).reduce((sum, height) => sum + height, 0) * (vh / 100);
   
   // Add extra space for headers and gaps
-  const extraSpace = vh * 2; // 2 viewport heights for headers and gaps
+  const extraSpace = vh * 4; // 2 viewport heights for headers and gaps
   
   return totalHeight + extraSpace;
 }; 

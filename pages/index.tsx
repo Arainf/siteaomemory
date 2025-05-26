@@ -58,7 +58,7 @@ const Home: NextPage<HomeProps> = ({ /* draggablePhotos */ }) => {
           const totalHeight = calculateTotalHeight();
           
           gsap.to(window, {
-            duration: 150,
+            duration: 360,
             scrollTo: totalHeight,
             ease: "none",
             onComplete: () => {
