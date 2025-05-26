@@ -26,7 +26,7 @@ class MyDocument extends Document {
         </Head>
         <body className="bg-gradient-to-b from-orange-500 to-orange-400 h-auto antialiased overflow-x-hidden ">
         
-        <nav className="fixed top-0 left-0 right-0 z-50 p-4 flex items-center justify-between">
+        <nav className="fixed top-0 left-0 right-0 z-10 p-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-gray-600">
             <Image src="/assets/img/logo.png" alt="Logo" width={100} height={100} />
@@ -34,7 +34,7 @@ class MyDocument extends Document {
         </div>
 
         {/* Navigation Links - Centered with Glassmorphism Effect */}
-        <div className="flex-grow flex justify-end">
+        <div className="flex-grow flex  justify-end">
           <div >
             <ul className="flex items-center">
               <li>

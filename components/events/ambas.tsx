@@ -106,7 +106,7 @@ export default function Ambas() {
         .from(
           imageRefs.current,
           {
-            opacity: 0,
+            opacity: 1,
             scale: 0.9,
             duration: 0.8,
             stagger: 0.2,
@@ -158,7 +158,7 @@ export default function Ambas() {
           ref={titleRef}
           className="flex max-w-[40ch] flex-col gap-2 items-center justify-center font-century text-5xl font-extrabold text-white sm:max-w-[32ch] relative"
         >
-          SWEETAO Days 2024 Ambassadors
+         SWEETAO AMBASSADORS 2024 🩷☁️✨️
           <button
             onClick={toggleOverlay}
             className='absolute h-15 w-15 bottom-0 right-0 m-3 border rounded-full p-2 hover:bg-black hover:ease-in-out duration-300'
@@ -252,7 +252,7 @@ export default function Ambas() {
               <X className="text-white h-6 w-6" />
             </button>
             <h1 className="text-6xl font-century font-extrabold text-white mb-8">
-              SWEETAO Days 2024 Ambassadors
+             SWEETAO AMBASSADORS 2024 🩷☁️✨️
             </h1>
             <p className="text-xl text-white leading-relaxed mb-8">
               Adding an extra layer of excitement and charm to the event, SWEETAO Days 2024 also proudly revealed its official ambassadors. These individuals embodied the "Very Sweet, Very Cutesy" spirit of the event, helping to spread the joy and magic throughout the campus.

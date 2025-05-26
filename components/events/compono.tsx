@@ -118,7 +118,7 @@ export default function Compono() {
         .from(
           imageRefs.current,
           {
-            opacity: 0,
+            opacity: 1,
             scale: 0.9,
             duration: 0.8,
             stagger: 0.2,

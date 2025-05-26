@@ -81,8 +81,6 @@ export default function Sweetao() {
     "https://res.cloudinary.com/dxjspzyrh/image/upload/v1747764948/39_lvms5p.webp",
     "https://res.cloudinary.com/dxjspzyrh/image/upload/v1747764946/37_rpyarn.webp",
     "https://res.cloudinary.com/dxjspzyrh/image/upload/v1747764950/40_ucfh5d.webp"
-    
-    
   ], [])
 
   const imageTilts = useMemo(() => imageUrls.map(() => getRandomTilt()), [imageUrls]);
@@ -106,7 +104,7 @@ export default function Sweetao() {
         .from(
           imageRefs.current,
           {
-            opacity: 0,
+            opacity: 1,
             scale: 0.9,
             duration: 0.8,
             stagger: 0.2,
@@ -158,7 +156,7 @@ export default function Sweetao() {
           ref={titleRef}
           className="flex max-w-[40ch] flex-col gap-2 items-center justify-center font-century text-5xl font-extrabold text-white sm:max-w-[32ch] relative"
         >
-          SITEAO Presented the "Very Sweet, Very Cutesy" SWEETAO Days 2024!
+          SWEETEAO DAYS 2024 🍪🍬🍭🍯
           <button
             onClick={toggleOverlay}
             className='absolute h-15 w-15 bottom-0 right-0 m-3 border rounded-full p-2 hover:bg-black hover:ease-in-out duration-300'
@@ -223,7 +221,6 @@ export default function Sweetao() {
           />
         </div>
 
-
         {/* Overlay for desktop */}
         <div
           ref={desktopOverlayRef}
@@ -239,13 +236,13 @@ export default function Sweetao() {
               <X className="text-white h-6 w-6" />
             </button>
             <h1 className="text-6xl font-century font-extrabold text-white mb-8">
-              SITEAO Presented the "Very Sweet, Very Cutesy" SWEETAO Days 2024!
+              SWEETEAO DAYS 2024 🍪🍬🍭🍯
             </h1>
             <p className="text-xl text-white leading-relaxed">
-              A delightful sensory overload transformed the campus as the Science, Information Technology, and Engineering Academic Organization (SITEAO) presented its most enchanting event of the year: SWEETAO Days 2024! From September 12-14, 2024, the campus had been a dreamy wonderland, promising to fill hearts with sugar and dreams with magic.
+              A delightful sensory overload transformed the campus as the Science, Information Technology and Engineering Academic Organization (SITEAO) presented its most enchanting event of the year: SWEETAO Days 2024! From September 12-14, 2024, the campus had been a dreamy wonderland, promising to fill hearts with sugar and dreams with magic.
               <br />
               <br />
-              The planning on this event was not a piece of cake, rather the organizing committee proposed the event to be aligned with the AO’s branding. But to unveil the sweet and cutesy side of SITEAO Griffins, the committee came up with this sweet dreamy wonderland. Embodying its charming motto, "Very Sweet, Very Cutesy," SWEETAO Days invited everyone to discover their inner sweet treat and immerse themselves in a world of delectable delights. The event offered a tempting array of goodies to satisfy every craving:
+              The planning on this event was not a piece of cake, rather the organizing committee proposed the event to be aligned with the AO's branding. But to unveil the sweet and cutesy side of SITEAO Griffins, the committee came up with this sweet dreamy wonderland. Embodying its charming motto, "Very Sweet, Very Cutesy," SWEETAO Days invited everyone to discover their inner sweet treat and immerse themselves in a world of delectable delights. The event offered a tempting array of goodies to satisfy every craving:
               <br />
               <br />
               More than just a showcase of treats, SWEETAO Days 2024 was designed as an experience, a chance to make memories that taste as sweet as candy. It was an opportunity for the SITEAO community and the wider student body to come together, unwind, and enjoy the lighter, more playful side of academic life. SWEETAO Days 2024 officially kicked off and filled hearts with sugar and dreams with magic, making those few days the sweetest time for many.
@@ -304,10 +301,10 @@ export default function Sweetao() {
               SITEAO Presented the "Very Sweet, Very Cutesy" SWEETAO Days 2024!
             </h1>
             <p className="text-sm text-white leading-relaxed">
-              A delightful sensory overload transformed the campus as the Science, Information Technology, and Engineering Academic Organization (SITEAO) presented its most enchanting event of the year: SWEETAO Days 2024! From September 12-14, 2024, the campus had been a dreamy wonderland, promising to fill hearts with sugar and dreams with magic.
+              A delightful sensory overload transformed the campus as the Science, Information Technology and Engineering Academic Organization (SITEAO) presented its most enchanting event of the year: SWEETAO Days 2024! From September 12-14, 2024, the campus had been a dreamy wonderland, promising to fill hearts with sugar and dreams with magic.
               <br />
               <br />
-              The planning on this event was not a piece of cake, rather the organizing committee proposed the event to be aligned with the AO’s branding. But to unveil the sweet and cutesy side of SITEAO Griffins, the committee came up with this sweet dreamy wonderland. Embodying its charming motto, "Very Sweet, Very Cutesy," SWEETAO Days invited everyone to discover their inner sweet treat and immerse themselves in a world of delectable delights. The event offered a tempting array of goodies to satisfy every craving:
+              The planning on this event was not a piece of cake, rather the organizing committee proposed the event to be aligned with the AO's branding. But to unveil the sweet and cutesy side of SITEAO Griffins, the committee came up with this sweet dreamy wonderland. Embodying its charming motto, "Very Sweet, Very Cutesy," SWEETAO Days invited everyone to discover their inner sweet treat and immerse themselves in a world of delectable delights. The event offered a tempting array of goodies to satisfy every craving:
               <br />
               <br />
               More than just a showcase of treats, SWEETAO Days 2024 was designed as an experience, a chance to make memories that taste as sweet as candy. It was an opportunity for the SITEAO community and the wider student body to come together, unwind, and enjoy the lighter, more playful side of academic life. SWEETAO Days 2024 officially kicked off and filled hearts with sugar and dreams with magic, making those few days the sweetest time for many.

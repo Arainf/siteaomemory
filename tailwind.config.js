@@ -8,6 +8,9 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
   	extend: {
@@ -83,7 +86,26 @@ module.exports = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
+  		},
+  		backgroundImage: {
+  			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+  			'gradient-conic':
+  				'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+  		},
+  		keyframes: {
+  			marquee: {
+  				'0%': { transform: 'translateX(0%)' },
+  				'100%': { transform: 'translateX(calc(-150vw - 1rem))' },
+  			},
+  			'marquee-reverse': {
+  				'0%': { transform: 'translateX(calc(-150vw - 1rem))' },
+  				'100%': { transform: 'translateX(0%)' },
+  			},
+  		},
+  		animation: {
+  			marquee: 'marquee 60s linear infinite',
+  			'marquee-reverse': 'marquee-reverse 60s linear infinite',
+  		},
   	}
   },
   plugins: [require("tailwindcss-animate")],
